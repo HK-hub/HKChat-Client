@@ -102,7 +102,7 @@
   import CoArtBoard from '@/views/CoArtBoard'
   import CoVideo from '@/views/CoVideo'
   import {coArtBoardReplyTypes, WEB_RTC_MSG_TYPE} from '@/const'
-  import {removeCookie} from '@/utils/token'
+  import {removeCookie} from '@/utils/accessToken'
 
   const WEB_RTC_MSG_TYPE_TEXT = {
     artBoard: '白板协作',

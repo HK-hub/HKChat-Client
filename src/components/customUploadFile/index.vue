@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import {getCookie} from '@/utils/token'
+  import {getCookie} from '@/utils/accessToken'
 
   /**
    * 上传文件到云服务器

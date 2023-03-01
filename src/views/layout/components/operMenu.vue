@@ -56,7 +56,7 @@
 </template>
 
 <script>
-  import {removeCookie} from '@/utils/token'
+  import {removeCookie} from '@/utils/accessToken'
 
   export default {
     data() {
@@ -93,7 +93,7 @@
           this.$router.replace("/login");
           this.$socket.emit("leave");
           this.$store.dispatch("user/LOGOUT");
-          removeCookie(); //删除客户端的 token
+          removeCookie(); //删除客户端的 accessToken
         }).catch(() => {
           this.$message({
             type: "info",
